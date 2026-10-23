@@ -60,7 +60,7 @@ const NavBar = () => {
         <HeaderLogo>
           <Link to='/'>
             <img
-              src='https://www.sentenceu.co.kr/src/assets/images/logo_empty.png'
+              src='/src/assets/images/logo_empty.png'
               alt='센텐스유 로고'
             />
           </Link>

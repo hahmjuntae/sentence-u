@@ -17,6 +17,13 @@ const { DefinePlugin } = pkg;
 
 dotenv.config();
 
+// 번들에 노출해도 되는 환경변수만 허용
+const PUBLIC_ENV = Object.fromEntries(
+  ['NODE_ENV', 'KAKAO_REST_API_KEY', 'KAKAO_LOGIN_REDIRECT_URI', 'KAKAO_LOGOUT_REDIRECT_URI'].map(
+    (key) => [key, process.env[key]],
+  ),
+);
+
 console.log('isDevelopment::', isDevelopment);
 
 const config = {
@@ -143,7 +150,7 @@ const config = {
       ],
     }),
     new DefinePlugin({
-      'process.env': JSON.stringify(process.env),
+      'process.env': JSON.stringify(PUBLIC_ENV),
       DEVELOPMENT: isDevelopment ? 'true' : 'false',
       API_SERVER: isDevelopment ? JSON.stringify(process.env.API_SERVER) : '',
     }),

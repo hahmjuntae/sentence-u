@@ -20,8 +20,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 axios.defaults.withCredentials = true;
 if (isDevelopment) {
   axios.defaults.baseURL = 'http://localhost:8000'; // 개발
-} else {
-  axios.defaults.baseURL = 'https://www.sentenceu.co.kr'; // 배포
 }
 
 /* React-Query 기본 설정 */

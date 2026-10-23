@@ -9,7 +9,7 @@
 동기부여가 생긴 적이 있나요?
 
 ## 💬 이제는 여러분이 말해주세요!
-📝 [방문하기](https://www.sentenceu.co.kr)
+📝 [방문하기](https://sentenceu.graphite.is)
 
 ---
 
@@ -24,6 +24,7 @@
 
 ## 📆 개발기간
 - ver 1. (2023.01.05 ~ 2023.02.11)
+- ver 2. (2026.10.23) sentenceu.graphite.is 로 이전, Atlas 스냅샷에서 데이터 복구
 
 ## 📝 작업 기록
 
@@ -35,7 +36,7 @@
 | FrontEnd       | JavaScript / React / Webpack |
 | BackEnd        | Node / Express                         |
 | Database       | MongoDB(Mongoose)               |
-| Cloud | AWS S3 / CloudType(CI/CD) |
+| Cloud | Vercel / MongoDB Atlas (2026.10 이전, 이전 AWS S3 / CloudType) |
 | Tool           | VisualStudio Code           |
 
 ---

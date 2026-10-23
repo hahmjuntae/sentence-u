@@ -33,8 +33,7 @@ import {
   UserTitle,
 } from './styles';
 
-const API_SERVER =
-  process.env.NODE_ENV !== 'production' ? 'http://localhost:8000' : 'https://www.sentenceu.co.kr';
+const API_SERVER = process.env.NODE_ENV !== 'production' ? 'http://localhost:8000' : '';
 
 const Setting = () => {
   const navigate = useNavigate();
@@ -59,6 +58,7 @@ const Setting = () => {
         // POST로 formData 전송
         method: 'POST',
         body: formData,
+        credentials: 'include',
       })
         .then(() => refetch()) // 변경(업로드)성공 시 클라이언트 유저 정보 리패치
         .catch((error) => console.error(error));

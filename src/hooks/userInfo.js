@@ -66,7 +66,7 @@ export const useGetClientUser = () => {
 
   let isAuth;
 
-  if (Object(data).isAuth === (null || undefined)) {
+  if (data && Object(data).isAuth === undefined) {
     // res.data에 isAuth가 없으면 로그인 상태이므로 true 할당
     isAuth = true;
   } else if (!Object(data).isAuth) {

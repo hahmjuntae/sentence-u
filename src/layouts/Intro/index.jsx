@@ -6,14 +6,14 @@ const Intro = () => {
   return (
     <Container>
       <Image
-        src={'https://www.sentenceu.co.kr/src/assets/images/landing_graphic.gif'}
+        src={'/src/assets/images/landing_graphic.gif'}
         alt='poster'
       />
 
       <Description>
         <Title>
           <img
-            src='https://www.sentenceu.co.kr/src/assets/images/logo_empty.png'
+            src='/src/assets/images/logo_empty.png'
             alt='센텐스유 로고'
           />
         </Title>

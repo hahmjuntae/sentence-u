@@ -148,7 +148,7 @@ export const KakaoLogin = styled.button`
   width: 183px;
   height: 45px;
   border-radius: 6px;
-  background: url('https://www.sentenceu.co.kr/src/assets/images/kakao_login_large_narrow.png');
+  background: url('/src/assets/images/kakao_login_large_narrow.png');
   background-size: cover;
   cursor: pointer;
 `;

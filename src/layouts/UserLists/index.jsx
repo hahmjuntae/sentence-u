@@ -5,14 +5,14 @@ import { CircularProgress } from '@mui/material';
 
 import ProfileCard from '@components/ProfileCard';
 import { useAllUsers, useGetClientUser } from '@hooks/userInfo';
-import { useSocket } from '@hooks/useSocket';
+import { useOnlineUsers } from '@hooks/useOnlineUsers';
 
 import { Container, Loading, Online, Title } from './styles';
 
 const UserLists = () => {
   const { allUsers, isLoading } = useAllUsers();
   const { userName } = useGetClientUser();
-  const { onlineList } = useSocket(userName);
+  const { onlineList } = useOnlineUsers(userName);
 
   /*============================================
       온라인 유저가 맨 위에 위치하도록 배열 순서 바꾸기
